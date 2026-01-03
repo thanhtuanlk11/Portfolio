@@ -13,8 +13,8 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>{t('about.description1')}</p>
-            <p>{t('about.description2')}</p>
-            <p>{t('about.description3')}</p>
+            {t('about.description2') && <p>{t('about.description2')}</p>}
+            {t('about.description3') && <p>{t('about.description3')}</p>}
             <div className="about-stats">
               <Card className="stat-item">
                 <h3>15+</h3>
