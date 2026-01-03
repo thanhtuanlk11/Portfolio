@@ -31,6 +31,7 @@
     @include mobile {
       font-size: 1.5rem;
       margin-bottom: $spacing-sm;
+      text-align: center;
     }
   }
 
@@ -43,6 +44,7 @@
       font-size: 0.95rem;
       margin-bottom: $spacing-lg;
       line-height: 1.6;
+      text-align: center;
     }
   }
 }
@@ -51,6 +53,10 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-lg;
+
+  @include mobile {
+    align-items: center;
+  }
 }
 
 .contact-item {
@@ -64,6 +70,12 @@
   text-decoration: none;
   color: inherit;
   transition: transform $transition-base, box-shadow $transition-base;
+  width: 100%;
+
+  @include mobile {
+    justify-content: center;
+    text-align: center;
+  }
 
   &:hover {
     transform: translateY(-5px);
@@ -91,6 +103,11 @@
 .contact-text {
   display: flex;
   flex-direction: column;
+
+  @include mobile {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .contact-label {
