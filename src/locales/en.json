@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Nguyen Huu Thanh Nam",
+    "title": "Software Engineering",
+    "description": "Fullstack Developer with 3 years of experience in systems analysis and software development, delivering robust web applications for 15+ clients. Passionate about engaging in tech startup projects or initiating personal projects.",
+    "contactBtn": "Contact Me",
+    "projectsBtn": "View Projects"
+  },
+  "about": {
+    "title": "About",
+    "description1": "Fullstack Developer with 3 years of experience in systems analysis and software development, delivering robust web applications for 15+ clients. Passionate about engaging in tech startup projects or initiating personal projects.",
+    "description2": "Proficient in C# (.NET Core – [3.1, 6], Entity Framework), NodeJS, Angular, ReactJS, and databases including PostgreSQL, MySQL, SQL Server, and MongoDB, with expertise in RESTful APIs and JavaScript (jQuery).",
+    "description3": "Strong skills in OOP, software design, and Agile Scrum, with a proven ability to solve complex problems and meet tight deadlines under pressure. Fast learner with a B2 English level (Efset 52), committed to mastering new technologies and aspiring to become a Technical Lead within 2 years.",
+    "stats": {
+      "clients": "Clients Served",
+      "experience": "Years of Experience",
+      "technologies": "Technologies Used"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "programming": "Programming Languages",
+      "frameworks": "Frameworks & Platforms",
+      "database": "Database & Tools",
+      "other": "Other Technologies"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "aegona": {
+      "position": "Software Engineer",
+      "company": "Software Development Aegona Ltd",
+      "location": "District 12, Ho Chi Minh City, Vietnam",
+      "period": "March 2023 - November 2025",
+      "duration": "2 yrs 9 mos",
+      "type": "On-site",
+      "descriptions": {
+        "desc1": "Developed and maintained web applications using modern front-end and back-end technologies, ensuring seamless integration and optimal performance",
+        "desc2": "Collaborated with cross-functional teams, including designers, product managers, and QA engineers, to deliver high-quality software products within tight deadlines",
+        "desc3": "Designed and implemented RESTful APIs to facilitate efficient communication between front-end and back-end systems",
+        "desc4": "Conducted code reviews and provided mentorship to junior developers to maintain code quality and foster team growth",
+        "desc5": "Led a small team of 4-5 developers as a TechLead, overseeing project planning, task delegation, and technical guidance to ensure timely delivery and alignment with project goals"
+      }
+    },
+    "sevago": {
+      "position": "Software Engineer",
+      "company": "Sevago Careers",
+      "location": "Ho Chi Minh City, Vietnam",
+      "period": "November 2025 - Present",
+      "duration": "3 mos",
+      "type": "On-site",
+      "employmentType": "Full-time",
+      "descriptions": {
+        "desc1": "Develop and optimize software applications using modern technologies",
+        "desc2": "Participate in the design and development of new features for the system",
+        "desc3": "Ensure code quality through code reviews and testing"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "filters": {
+      "all": "All",
+      "fullstack": "Full Stack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "team": "Team",
+    "role": "Role",
+    "achievement": "Achievement",
+    "pandaloyalty": {
+      "title": "PandaLoyalty - Customer Management Website",
+      "description": "The PandaLoyalty system is a customer care platform and loyalty program management solution that helps businesses build and maintain long-term relationships with customers. Through point accumulation and rewards for purchases or other actions, customers can redeem their points for gifts. The system also integrates online payment, shipping, mini-games, and connects with multiple third-party services such as POS, KiotViet, and Zalo Official Account.",
+      "achievement": "Successfully developed and deployed to over 15 customers nationwide",
+      "period": "2023 - Present"
+    },
+    "plant": {
+      "title": "Plant Management Website",
+      "description": "This is a system for monitoring the growth, location, area, and status of plants. After purchasing a product, customers will contribute a tree to help green the country. They will receive a tree code and activate their planted tree through the website. On the website, users can track their tree's growth, location, and images throughout its development. Additionally, they can read news about the company, its activities, and enjoy mini-apps on the platform.",
+      "period": "3/2024 - 7/2024 | 5/2025 - Present"
+    },
+    "sale": {
+      "title": "Sale Miniapp",
+      "description": "This is a sales system that allows users to browse products, make purchases through the miniapp, pay directly via VNPay, and view purchase and payment history on the miniapp. The system includes several other features such as a shopping cart, online payment, delivery, price filtering, viewing personal information, product details, etc. The system is integrated with third parties like KiotViet, VNPay, Grab, and others.",
+      "period": "7/2024 - 12/2024"
+    },
+    "role": "Fullstack Developer"
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "certifications": "Certifications",
+    "degree": "Engineering Degree in Software Engineering",
+    "school": "DaLat University",
+    "description": "Graduated with a degree in Software Engineering. During studies, participated in many projects and research on software development, building a solid foundation for a software development career."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "description": "I'm always open to hearing about new collaboration opportunities. Send me a message and I'll respond as soon as possible.",
+    "labels": {
+      "email": "Email",
+      "mobile": "Mobile",
+      "address": "Address",
+      "linkedin": "LinkedIn"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "success": "Thank you for contacting me! I'll respond as soon as possible."
+  }
+}
+

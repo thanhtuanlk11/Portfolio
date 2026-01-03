@@ -1,0 +1,147 @@
+@import '../shared/mixins';
+
+.contact {
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-2xl;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    gap: $spacing-xl;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+  }
+}
+
+.contact-info {
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+    color: $text-primary;
+
+    @include mobile {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  p {
+    color: $text-secondary;
+    margin-bottom: $spacing-xl;
+    line-height: 1.8;
+
+    @include mobile {
+      font-size: 0.95rem;
+      margin-bottom: $spacing-lg;
+      line-height: 1.6;
+    }
+  }
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  padding: $spacing-lg;
+  background: white;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  text-decoration: none;
+  color: inherit;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include gradient-primary;
+  border-radius: $radius-lg;
+  color: white;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.875rem;
+  color: $text-secondary;
+  margin-bottom: 0.25rem;
+}
+
+.contact-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.contact-form {
+  padding: $spacing-xl;
+
+  @include mobile {
+    padding: $spacing-lg;
+  }
+}
+
+.form-group {
+  margin-bottom: $spacing-lg;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: $spacing-md;
+    border: 2px solid $border-color;
+    border-radius: $radius-md;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color $transition-base;
+    background: $bg-secondary;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      background: white;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+}
+
+.w-full {
+  width: 100%;
+  justify-content: center;
+}
+

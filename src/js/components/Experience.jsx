@@ -1,0 +1,73 @@
+import { useLanguage } from '../shared/useLanguage'
+import SectionTitle from '../shared/SectionTitle'
+import Card from '../shared/Card'
+import '../../styles/components/Experience.scss'
+
+const Experience = () => {
+  const { t } = useLanguage()
+
+  const experiences = [
+    {
+      position: t('experience.sevago.position'),
+      company: t('experience.sevago.company'),
+      location: t('experience.sevago.location'),
+      period: t('experience.sevago.period'),
+      duration: t('experience.sevago.duration'),
+      type: t('experience.sevago.type'),
+      employmentType: t('experience.sevago.employmentType'),
+      description: [
+        t('experience.sevago.descriptions.desc1'),
+        t('experience.sevago.descriptions.desc2'),
+        t('experience.sevago.descriptions.desc3')
+      ]
+    },
+    {
+      position: t('experience.aegona.position'),
+      company: t('experience.aegona.company'),
+      location: t('experience.aegona.location'),
+      period: t('experience.aegona.period'),
+      duration: t('experience.aegona.duration'),
+      type: t('experience.aegona.type'),
+      description: [
+        t('experience.aegona.descriptions.desc1'),
+        t('experience.aegona.descriptions.desc2'),
+        t('experience.aegona.descriptions.desc3'),
+        t('experience.aegona.descriptions.desc4'),
+        t('experience.aegona.descriptions.desc5')
+      ]
+    }
+  ]
+
+  return (
+    <section id="experience" className="experience">
+      <div className="container">
+        <SectionTitle>{t('experience.title')}</SectionTitle>
+        <div className="timeline">
+          {experiences.map((exp, index) => (
+            <div key={index} className="timeline-item">
+              <div className="timeline-marker"></div>
+              <Card className="timeline-content">
+                <h3 className="timeline-title">{exp.position}</h3>
+                <h4 className="timeline-company">{exp.company}</h4>
+                {exp.location && <p className="timeline-location">{exp.location}</p>}
+                <div className="timeline-meta">
+                  <span className="timeline-period">{exp.period}</span>
+                  {exp.duration && <span className="timeline-duration">{exp.duration}</span>}
+                  {exp.type && <span className="timeline-type">{exp.type}</span>}
+                  {exp.employmentType && <span className="timeline-employment-type">{exp.employmentType}</span>}
+                </div>
+                <ul className="timeline-description">
+                  {exp.description.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Experience

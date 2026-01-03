@@ -1,0 +1,14 @@
+@import './mixins';
+
+.btn {
+  @include button-base;
+}
+
+.btn-primary {
+  @include button-primary;
+}
+
+.btn-secondary {
+  @include button-secondary;
+}
+

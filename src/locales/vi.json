@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "education": "Học vấn",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Nguyễn Hữu Thành Nam",
+    "title": "Software Engineering",
+    "description": "Fullstack Developer với 3 năm kinh nghiệm trong phân tích hệ thống và phát triển phần mềm, đã giao hơn 15+ ứng dụng web cho khách hàng. Đam mê tham gia các dự án tech startup hoặc khởi tạo dự án cá nhân.",
+    "contactBtn": "Liên hệ với tôi",
+    "projectsBtn": "Xem dự án"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "description1": "Fullstack Developer với 3 năm kinh nghiệm trong phân tích hệ thống và phát triển phần mềm, đã giao hơn 15+ ứng dụng web cho khách hàng. Đam mê tham gia các dự án tech startup hoặc khởi tạo dự án cá nhân.",
+    "description2": "Thành thạo C# (.NET Core – [3.1, 6], Entity Framework), NodeJS, Angular, ReactJS, và các cơ sở dữ liệu bao gồm PostgreSQL, MySQL, SQL Server, và MongoDB, với chuyên môn về RESTful APIs và JavaScript (jQuery).",
+    "description3": "Kỹ năng mạnh về OOP, thiết kế phần mềm, và Agile Scrum, với khả năng đã được chứng minh trong việc giải quyết các vấn đề phức tạp và đáp ứng thời hạn chặt chẽ dưới áp lực. Người học nhanh với trình độ tiếng Anh B2 (Efset 52), cam kết thành thạo các công nghệ mới và mong muốn trở thành Technical Lead trong vòng 2 năm.",
+    "stats": {
+      "clients": "Khách hàng đã phục vụ",
+      "experience": "Năm kinh nghiệm",
+      "technologies": "Công nghệ đã sử dụng"
+    }
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "categories": {
+      "programming": "Ngôn ngữ Lập trình",
+      "frameworks": "Frameworks & Platforms",
+      "database": "Database & Tools",
+      "other": "Công nghệ Khác"
+    }
+  },
+  "experience": {
+    "title": "Kinh nghiệm làm việc",
+    "aegona": {
+      "position": "Software Engineer",
+      "company": "Software Development Aegona Ltd",
+      "location": "Quận 12, TP. Hồ Chí Minh, Việt Nam",
+      "period": "Tháng 3/2023 - Tháng 11/2025",
+      "duration": "2 năm 9 tháng",
+      "type": "On-site",
+      "descriptions": {
+        "desc1": "Phát triển và duy trì các ứng dụng web sử dụng công nghệ front-end và back-end hiện đại, đảm bảo tích hợp liền mạch và hiệu suất tối ưu",
+        "desc2": "Hợp tác với các team đa chức năng, bao gồm designers, product managers, và QA engineers, để giao các sản phẩm phần mềm chất lượng cao trong thời hạn chặt chẽ",
+        "desc3": "Thiết kế và triển khai RESTful APIs để tạo điều kiện giao tiếp hiệu quả giữa hệ thống front-end và back-end",
+        "desc4": "Thực hiện code review và cung cấp mentorship cho các junior developers để duy trì chất lượng code và thúc đẩy sự phát triển của team",
+        "desc5": "Lãnh đạo một team nhỏ gồm 4-5 developers với vai trò TechLead, giám sát lập kế hoạch dự án, phân công nhiệm vụ, và hướng dẫn kỹ thuật để đảm bảo giao hàng đúng hạn và phù hợp với mục tiêu dự án"
+      }
+    },
+    "sevago": {
+      "position": "Software Engineer",
+      "company": "Sevago Careers",
+      "location": "TP. Hồ Chí Minh, Việt Nam",
+      "period": "Tháng 11/2025 - Hiện tại",
+      "duration": "3 tháng",
+      "type": "On-site",
+      "employmentType": "Full-time",
+      "descriptions": {
+        "desc1": "Phát triển và tối ưu hóa các ứng dụng phần mềm sử dụng công nghệ hiện đại",
+        "desc2": "Tham gia vào quá trình thiết kế và phát triển các tính năng mới cho hệ thống",
+        "desc3": "Đảm bảo chất lượng code thông qua code review và testing"
+      }
+    }
+  },
+  "projects": {
+    "title": "Dự án",
+    "filters": {
+      "all": "Tất cả",
+      "fullstack": "Full Stack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "team": "Team",
+    "role": "Role",
+    "achievement": "Thành tựu",
+    "pandaloyalty": {
+      "title": "PandaLoyalty - Customer Management Website",
+      "description": "Hệ thống PandaLoyalty là nền tảng chăm sóc khách hàng và quản lý chương trình khách hàng thân thiết giúp doanh nghiệp xây dựng và duy trì mối quan hệ lâu dài với khách hàng. Thông qua tích lũy điểm và phần thưởng cho việc mua hàng hoặc các hành động khác, khách hàng có thể đổi điểm lấy quà tặng. Hệ thống cũng tích hợp thanh toán trực tuyến, vận chuyển, mini-games, và kết nối với nhiều dịch vụ bên thứ ba như POS, KiotViet, và Zalo Official Account.",
+      "achievement": "Đã phát triển và triển khai thành công cho hơn 15 khách hàng trên toàn quốc",
+      "period": "2023 - Hiện tại"
+    },
+    "plant": {
+      "title": "Plant Management Website",
+      "description": "Đây là hệ thống giám sát sự phát triển, vị trí, diện tích và trạng thái của cây trồng. Sau khi mua sản phẩm, khách hàng sẽ đóng góp một cây để giúp làm xanh đất nước. Họ sẽ nhận được mã cây và kích hoạt cây đã trồng thông qua website. Trên website, người dùng có thể theo dõi sự phát triển, vị trí và hình ảnh của cây trong suốt quá trình phát triển. Ngoài ra, họ có thể đọc tin tức về công ty, các hoạt động của công ty, và thưởng thức mini-apps trên nền tảng.",
+      "period": "3/2024 - 7/2024 | 5/2025 - Hiện tại"
+    },
+    "sale": {
+      "title": "Sale Miniapp",
+      "description": "Đây là hệ thống bán hàng cho phép người dùng duyệt sản phẩm, mua hàng thông qua miniapp, thanh toán trực tiếp qua VNPay, và xem lịch sử mua hàng và thanh toán trên miniapp. Hệ thống bao gồm nhiều tính năng khác như giỏ hàng, thanh toán trực tuyến, giao hàng, lọc giá, xem thông tin cá nhân, chi tiết sản phẩm, v.v. Hệ thống được tích hợp với các bên thứ ba như KiotViet, VNPay, Grab, và các dịch vụ khác.",
+      "period": "7/2024 - 12/2024"
+    },
+    "role": "Fullstack Developer"
+  },
+  "education": {
+    "title": "Học vấn & Chứng chỉ",
+    "certifications": "Chứng chỉ",
+    "degree": "Engineering Degree in Software Engineering",
+    "school": "Đại học Đà Lạt (DaLat University)",
+    "description": "Tốt nghiệp chuyên ngành Kỹ thuật Phần mềm. Trong quá trình học tập, đã tham gia nhiều dự án và nghiên cứu về phát triển phần mềm, xây dựng nền tảng vững chắc cho sự nghiệp phát triển phần mềm."
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Hãy liên hệ với tôi",
+    "description": "Tôi luôn sẵn sàng lắng nghe các cơ hội hợp tác mới. Hãy gửi tin nhắn cho tôi và tôi sẽ phản hồi sớm nhất có thể.",
+    "labels": {
+      "email": "Email",
+      "mobile": "Mobile",
+      "address": "Địa chỉ",
+      "linkedin": "LinkedIn"
+    },
+    "form": {
+      "name": "Tên của bạn",
+      "email": "Email của bạn",
+      "subject": "Chủ đề",
+      "message": "Tin nhắn của bạn",
+      "submit": "Gửi tin nhắn"
+    },
+    "success": "Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể."
+  }
+}
+
