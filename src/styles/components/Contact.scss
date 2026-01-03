@@ -22,11 +22,21 @@
 }
 
 .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include mobile {
+    align-items: center;
+  }
+
   h3 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: $spacing-md;
     color: $text-primary;
+    text-align: center;
 
     @include mobile {
       font-size: 1.5rem;
@@ -39,12 +49,15 @@
     color: $text-secondary;
     margin-bottom: $spacing-xl;
     line-height: 1.8;
+    text-align: center;
+    max-width: 500px;
 
     @include mobile {
       font-size: 0.95rem;
       margin-bottom: $spacing-lg;
       line-height: 1.6;
       text-align: center;
+      max-width: 100%;
     }
   }
 }
@@ -53,6 +66,8 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-lg;
+  align-items: center;
+  width: 100%;
 
   @include mobile {
     align-items: center;
@@ -71,10 +86,13 @@
   color: inherit;
   transition: transform $transition-base, box-shadow $transition-base;
   width: 100%;
+  max-width: 400px;
 
   @include mobile {
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    gap: $spacing-sm;
+    max-width: 100%;
   }
 
   &:hover {
