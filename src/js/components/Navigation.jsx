@@ -29,7 +29,7 @@ const Navigation = ({ activeSection }) => {
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('home')}>
           <img 
-            src="/image/thanhnam.jpg" 
+            src={`${import.meta.env.BASE_URL}image/thanhnam.jpg`}
             alt="Nguyen Huu Thanh Nam" 
             className="nav-avatar"
           />

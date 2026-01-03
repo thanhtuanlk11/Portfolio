@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="hero-image">
             <div className="hero-avatar">
               <img 
-                src="/image/thanhnam.jpg" 
+                src={`${import.meta.env.BASE_URL}image/thanhnam.jpg`}
                 alt="Nguyen Huu Thanh Nam" 
                 className="avatar-image"
               />
