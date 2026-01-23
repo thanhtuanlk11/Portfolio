@@ -4,6 +4,46 @@ import '../../styles/components/Hero.scss'
 
 const Hero = () => {
   const { t } = useLanguage()
+  const cvUrl = `${import.meta.env.BASE_URL}namnguyenhuuthanh.pdf`
+
+  const handleDownloadCV = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await fetch(cvUrl)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const blob = await response.blob()
+      
+      const pdfBlob = blob.type === 'application/pdf' 
+        ? blob 
+        : new Blob([blob], { type: 'application/pdf' })
+      
+      const url = window.URL.createObjectURL(pdfBlob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = 'namnguyenhuuthanh.pdf'
+      link.type = 'application/pdf'
+      link.style.display = 'none'
+      document.body.appendChild(link)
+      link.click()
+      
+      setTimeout(() => {
+        document.body.removeChild(link)
+        window.URL.revokeObjectURL(url)
+      }, 200)
+    } catch {
+      const link = document.createElement('a')
+      link.href = cvUrl
+      link.download = 'namnguyenhuuthanh.pdf'
+      link.type = 'application/pdf'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  }
 
   return (
     <section id="home" className="hero">
@@ -18,11 +58,11 @@ const Hero = () => {
               {t('hero.description')}
             </p>
             <div className="hero-buttons">
-              <Button href="#contact" variant="primary">
-                {t('hero.contactBtn')}
-              </Button>
-              <Button href="#projects" variant="secondary">
+              <Button href="#projects" variant="primary">
                 {t('hero.projectsBtn')}
+              </Button>
+              <Button href={cvUrl} variant="secondary" onClick={handleDownloadCV} download="namnguyenhuuthanh.pdf">
+                {t('hero.downloadCv')}
               </Button>
             </div>
             <div className="hero-social">

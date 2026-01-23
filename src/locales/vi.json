@@ -11,16 +11,19 @@
   "hero": {
     "greeting": "Xin chào, tôi là",
     "name": "Nguyễn Hữu Thành Nam",
-    "title": "Software Engineering",
-    "description": "Fullstack Developer với 3 năm kinh nghiệm trong phân tích hệ thống và phát triển phần mềm, đã giao hơn 15+ ứng dụng web cho khách hàng. Đam mê tham gia các dự án tech startup hoặc khởi tạo dự án cá nhân.",
+    "title": "Middle Fullstack Developer | C#/.NET, React, Node.js, Next.js & Nhiều Công Nghệ Khác | 3+ Năm Xây Dựng Ứng Dụng Web Có Khả Năng Mở Rộng",
+    "description": "Tôi xây dựng backend vững chắc với C#/.NET và Node.js, tạo giao diện React và Next.js sạch, dễ bảo trì, và làm việc với nhiều database và công cụ hiện đại. Mạnh về full-stack development với chuyên môn đa dạng công nghệ.",
     "contactBtn": "Liên hệ với tôi",
-    "projectsBtn": "Xem dự án"
+    "projectsBtn": "Xem dự án",
+    "downloadCv": "Tải CV"
   },
   "about": {
     "title": "Giới thiệu",
-    "description1": "03 năm kinh nghiệm trong phân tích hệ thống và phát triển phần mềm. Có kinh nghiệm với nhiều ngôn ngữ lập trình và nền tảng (C# .netCore Entity Framework, NodeJs, Angular, ReactJS, PostgreSQL, MSSql Server, MySQL, MongoDB, JavaScript Jquery, API/Restfull). Kỹ năng tốt về OOP, Thiết kế phần mềm. Người học nhanh và giải quyết vấn đề. Khả năng làm việc dưới áp lực để đáp ứng thời hạn chặt chẽ. Quen thuộc với Phương pháp Agile: Agile Scrum. Tiếng Anh B2, Efset 52.",
-    "description2": "",
-    "description3": "",
+    "description1": "Tôi là Middle Fullstack Developer với hơn 3 năm kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng. Hành trình của tôi bắt đầu từ phân tích hệ thống và phát triển thành full-stack development, nơi tôi đã thành công triển khai hơn 15 ứng dụng production cho khách hàng ở nhiều ngành khác nhau.",
+    "description2": "Điểm mạnh cốt lõi của tôi nằm ở full-stack development với chuyên môn về C#/.NET, ReactJS, Node.js, và Next.js. Ở backend, tôi thiết kế và triển khai các RESTful API vững chắc sử dụng .NET Core (phiên bản 3.1 và 6) và Node.js với Express/NestJS, Entity Framework cho data access, và duy trì các pattern kiến trúc sạch. Tôi có kinh nghiệm với nhiều database bao gồm PostgreSQL, MySQL, SQL Server, và MongoDB, chọn công cụ phù hợp cho từng dự án.",
+    "description3": "Ở frontend, tôi xây dựng các ứng dụng responsive và hiệu năng cao sử dụng React với modern hooks, state management, và component architecture, cũng như Next.js cho server-side rendering và tối ưu hiệu năng. Tôi tập trung vào việc tạo code dễ bảo trì, tối ưu hiệu năng, và đảm bảo trải nghiệm người dùng tuyệt vời. Tôi cũng quen thuộc với Angular cho các ứng dụng enterprise, JavaScript/TypeScript, và đã làm việc với nhiều UI libraries và cách tiếp cận styling khác nhau bao gồm Tailwind CSS.",
+    "description4": "Ngoài coding, tôi mang đến kỹ năng giải quyết vấn đề mạnh mẽ, kinh nghiệm với phương pháp Agile/Scrum, và khả năng làm việc dưới áp lực để đáp ứng deadline chặt chẽ. Tôi đã dẫn dắt các team nhỏ với vai trò TechLead, thực hiện code review, và mentor các junior developers. Trình độ tiếng Anh của tôi là B2 (Efset 52), cho phép giao tiếp hiệu quả trong các team quốc tế.",
+    "description5": "Tôi đang tích cực tìm kiếm các cơ hội middle fullstack nơi tôi có thể sở hữu các tính năng từ thiết kế đến triển khai, làm việc với các tech stack hiện đại (C#/.NET, React, Node.js, Next.js, và nhiều công nghệ khác), và đóng góp vào các sản phẩm có ý nghĩa. Tôi đặc biệt quan tâm đến các vai trò tận dụng chuyên môn đa dạng về công nghệ của tôi trong khi cho phép tôi phát triển thành các trách nhiệm senior hơn.",
     "stats": {
       "clients": "Khách hàng đã phục vụ",
       "experience": "Năm kinh nghiệm",
@@ -30,10 +33,10 @@
   "skills": {
     "title": "Kỹ năng",
     "categories": {
-      "programming": "Ngôn ngữ Lập trình",
-      "frameworks": "Frameworks & Platforms",
-      "database": "Database & Tools",
-      "other": "Công nghệ Khác"
+      "main": "Kỹ năng chính",
+      "familiar": "Quen thuộc",
+      "devops": "DevOps & Hạ tầng",
+      "learning": "Đang học"
     }
   },
   "experience": {
@@ -70,6 +73,14 @@
   },
   "projects": {
     "title": "Dự án",
+    "labels": {
+      "role": "Vai trò",
+      "problem": "Vấn đề",
+      "outcome": "Kết quả",
+      "links": "Liên kết",
+      "demo": "Demo",
+      "repo": "GitHub"
+    },
     "filters": {
       "all": "Tất cả",
       "fullstack": "Full Stack",
@@ -77,25 +88,40 @@
       "backend": "Backend"
     },
     "team": "Team",
-    "role": "Role",
     "achievement": "Thành tựu",
     "pandaloyalty": {
       "title": "PandaLoyalty - Customer Management Website",
-      "description": "Hệ thống PandaLoyalty là nền tảng chăm sóc khách hàng và quản lý chương trình khách hàng thân thiết giúp doanh nghiệp xây dựng và duy trì mối quan hệ lâu dài với khách hàng. Thông qua tích lũy điểm và phần thưởng cho việc mua hàng hoặc các hành động khác, khách hàng có thể đổi điểm lấy quà tặng. Hệ thống cũng tích hợp thanh toán trực tuyến, vận chuyển, mini-games, và kết nối với nhiều dịch vụ bên thứ ba như POS, KiotViet, và Zalo Official Account.",
-      "achievement": "Đã phát triển và triển khai thành công cho hơn 15 khách hàng trên toàn quốc",
+      "summary": "Nền tảng loyalty quản lý thành viên, điểm thưởng, quà tặng và tích hợp đa kênh.",
+      "problem": "Quy trình thưởng thủ công và dữ liệu POS/CRM phân tán.",
+      "outcome": "Tự động hóa quy trình đổi điểm và tối ưu tích hợp, giảm thao tác thủ công.",
+      "role": "Fullstack Developer (C#/.NET, Integration)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo và repo có thể cung cấp khi được yêu cầu.",
       "period": "2023 - Hiện tại"
     },
     "plant": {
       "title": "Plant Management Website",
-      "description": "Đây là hệ thống giám sát sự phát triển, vị trí, diện tích và trạng thái của cây trồng. Sau khi mua sản phẩm, khách hàng sẽ đóng góp một cây để giúp làm xanh đất nước. Họ sẽ nhận được mã cây và kích hoạt cây đã trồng thông qua website. Trên website, người dùng có thể theo dõi sự phát triển, vị trí và hình ảnh của cây trong suốt quá trình phát triển. Ngoài ra, họ có thể đọc tin tức về công ty, các hoạt động của công ty, và thưởng thức mini-apps trên nền tảng.",
+      "summary": "Hệ thống quản lý cây trồng theo dõi tăng trưởng, vị trí và đóng góp của khách hàng.",
+      "problem": "Cần một dashboard thống nhất để theo dõi trạng thái cây và tương tác sau mua.",
+      "outcome": "Xây dựng luồng theo dõi và công cụ admin để cập nhật liên tục.",
+      "role": "Backend Developer (C#/.NET APIs)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo và repo có thể cung cấp khi được yêu cầu.",
       "period": "3/2024 - 7/2024 | 5/2025 - Hiện tại"
     },
     "sale": {
       "title": "Sale Miniapp",
-      "description": "Đây là hệ thống bán hàng cho phép người dùng duyệt sản phẩm, mua hàng thông qua miniapp, thanh toán trực tiếp qua VNPay, và xem lịch sử mua hàng và thanh toán trên miniapp. Hệ thống bao gồm nhiều tính năng khác như giỏ hàng, thanh toán trực tuyến, giao hàng, lọc giá, xem thông tin cá nhân, chi tiết sản phẩm, v.v. Hệ thống được tích hợp với các bên thứ ba như KiotViet, VNPay, Grab, và các dịch vụ khác.",
+      "summary": "Miniapp giúp duyệt sản phẩm, đặt hàng và thanh toán VNPay ngay trong Zalo.",
+      "problem": "Cần checkout nhẹ trong app và lịch sử đơn hàng cho người dùng.",
+      "outcome": "Triển khai luồng thanh toán và lịch sử đơn giúp mua nhanh hơn.",
+      "role": "Frontend Developer (React)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo và repo có thể cung cấp khi được yêu cầu.",
       "period": "7/2024 - 12/2024"
-    },
-    "role": "Fullstack Developer"
+    }
   },
   "education": {
     "title": "Học vấn & Chứng chỉ",
@@ -108,6 +134,7 @@
     "title": "Liên hệ",
     "subtitle": "Hãy liên hệ với tôi",
     "description": "Tôi luôn sẵn sàng lắng nghe các cơ hội hợp tác mới. Hãy gửi tin nhắn cho tôi và tôi sẽ phản hồi sớm nhất có thể.",
+    "note": "Mình đang mở cho cơ hội middle fullstack với C#/.NET, React, Node.js, Next.js, và các công nghệ web hiện đại.",
     "labels": {
       "email": "Email",
       "mobile": "Mobile",
@@ -119,9 +146,11 @@
       "email": "Email của bạn",
       "subject": "Chủ đề",
       "message": "Tin nhắn của bạn",
-      "submit": "Gửi tin nhắn"
+      "submit": "Gửi tin nhắn",
+      "sending": "Đang gửi..."
     },
-    "success": "Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể."
+    "success": "Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.",
+    "error": "Xin lỗi, có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại hoặc liên hệ trực tiếp tại namnguyenhuuthanh@gmail.com"
   }
 }
 

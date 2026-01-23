@@ -23,7 +23,6 @@ export const LanguageProvider = ({ children }) => {
     for (const key of keys) {
       value = value?.[key]
       if (value === undefined) {
-        console.warn(`Translation missing for: ${path}`)
         return path
       }
     }

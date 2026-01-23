@@ -15,6 +15,8 @@ const About = () => {
             <p>{t('about.description1')}</p>
             {t('about.description2') && <p>{t('about.description2')}</p>}
             {t('about.description3') && <p>{t('about.description3')}</p>}
+            {t('about.description4') && <p>{t('about.description4')}</p>}
+            {t('about.description5') && <p>{t('about.description5')}</p>}
             <div className="about-stats">
               <Card className="stat-item">
                 <h3>15+</h3>

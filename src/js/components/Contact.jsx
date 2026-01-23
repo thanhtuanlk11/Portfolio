@@ -13,19 +13,61 @@ const Contact = () => {
     subject: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null)
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     })
+    if (submitStatus) {
+      setSubmitStatus(null)
+    }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert(t('contact.success'))
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY'
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: formData.name,
+          from_email: formData.email
+        })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+        
+        setTimeout(() => {
+          setSubmitStatus(null)
+        }, 5000)
+      } else {
+        throw new Error(result.message || 'Form submission failed')
+      }
+    } catch {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -56,7 +98,7 @@ const Contact = () => {
         </svg>
       ),
       label: t('contact.labels.address'),
-      value: 'Phường Thủ Đức, Thành phố Hồ Chí Minh',
+      value: '115/11, đường 11, khu phố 34, phường Thủ Đức, Thành phố Hồ Chí Minh',
       link: '#'
     },
     {
@@ -79,6 +121,7 @@ const Contact = () => {
           <div className="contact-info">
             <h3>{t('contact.subtitle')}</h3>
             <p>{t('contact.description')}</p>
+            <p className="contact-note">{t('contact.note')}</p>
             <div className="contact-details">
               {contactInfo.map((info, index) => (
                 <a
@@ -139,8 +182,23 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <Button type="submit" variant="primary" className="w-full">
-                {t('contact.form.submit')}
+              {submitStatus === 'success' && (
+                <div className="form-message form-success">
+                  {t('contact.success')}
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="form-message form-error">
+                  {t('contact.error')}
+                </div>
+              )}
+              <Button 
+                type="submit" 
+                variant="primary" 
+                className="w-full"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
               </Button>
             </form>
           </Card>

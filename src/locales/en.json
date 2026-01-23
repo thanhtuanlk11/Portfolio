@@ -11,16 +11,19 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Nguyen Huu Thanh Nam",
-    "title": "Software Engineering",
-    "description": "Fullstack Developer with 3 years of experience in systems analysis and software development, delivering robust web applications for 15+ clients. Passionate about engaging in tech startup projects or initiating personal projects.",
+    "title": "Middle Fullstack Developer | C#/.NET, React, Node.js, Next.js & More | 3+ Years Building Scalable Web Applications",
+    "description": "I build robust backend services with C#/.NET and Node.js, create clean React and Next.js interfaces, and work with various databases and modern tools. Strong in full-stack development with expertise across multiple technologies.",
     "contactBtn": "Contact Me",
-    "projectsBtn": "View Projects"
+    "projectsBtn": "View Projects",
+    "downloadCv": "Download CV"
   },
   "about": {
     "title": "About",
-    "description1": "03 years experienced with systems analysis, software development. Experienced in many programming languages and platform (C# .netCore Entity Framework, NodeJs, Angular, ReactJS, PostgreSQL, MSSql Server, MySQL, MongoDB, JavaScript Jquery, API/Restfull). Good skill in OOP, Software design. Fast learner and problem solver. Ability to work under pressure to meet tight deadline. Familiar with Agile Methodology: Agile Scrum. English B2, Efset 52.",
-    "description2": "",
-    "description3": "",
+    "description1": "I'm a Middle Fullstack Developer with 3+ years of experience building scalable web applications. My journey started with systems analysis and has evolved into full-stack development, where I've successfully delivered 15+ production applications for clients across various industries.",
+    "description2": "My core strength lies in full-stack development with expertise in C#/.NET, ReactJS, Node.js, and Next.js. On the backend, I design and implement robust RESTful APIs using .NET Core (versions 3.1 and 6) and Node.js with Express/NestJS, Entity Framework for data access, and maintain clean architecture patterns. I'm experienced with multiple databases including PostgreSQL, MySQL, SQL Server, and MongoDB, choosing the right tool for each project's needs.",
+    "description3": "On the frontend, I build responsive and performant applications using React with modern hooks, state management, and component architecture, as well as Next.js for server-side rendering and optimized performance. I focus on creating maintainable code, optimizing performance, and ensuring excellent user experiences. I'm also comfortable with Angular for enterprise applications, JavaScript/TypeScript, and have worked with various UI libraries and styling approaches including Tailwind CSS.",
+    "description4": "Beyond coding, I bring strong problem-solving skills, experience with Agile/Scrum methodologies, and the ability to work under pressure to meet tight deadlines. I've led small teams as a TechLead, conducted code reviews, and mentored junior developers. My English level is B2 (Efset 52), enabling effective communication in international teams.",
+    "description5": "I'm actively seeking middle fullstack opportunities where I can take ownership of features from design to deployment, work with modern tech stacks (C#/.NET, React, Node.js, Next.js, and more), and contribute to meaningful products. I'm particularly interested in roles that leverage my diverse technical expertise while allowing me to grow into more senior responsibilities.",
     "stats": {
       "clients": "Clients Served",
       "experience": "Years of Experience",
@@ -30,10 +33,10 @@
   "skills": {
     "title": "Skills",
     "categories": {
-      "programming": "Programming Languages",
-      "frameworks": "Frameworks & Platforms",
-      "database": "Database & Tools",
-      "other": "Other Technologies"
+      "main": "Main Skills",
+      "familiar": "Familiar With",
+      "devops": "DevOps & Infrastructure",
+      "learning": "Learning"
     }
   },
   "experience": {
@@ -70,6 +73,14 @@
   },
   "projects": {
     "title": "Projects",
+    "labels": {
+      "role": "Role",
+      "problem": "Problem",
+      "outcome": "Outcome",
+      "links": "Links",
+      "demo": "Live Demo",
+      "repo": "GitHub"
+    },
     "filters": {
       "all": "All",
       "fullstack": "Full Stack",
@@ -77,25 +88,40 @@
       "backend": "Backend"
     },
     "team": "Team",
-    "role": "Role",
     "achievement": "Achievement",
     "pandaloyalty": {
       "title": "PandaLoyalty - Customer Management Website",
-      "description": "The PandaLoyalty system is a customer care platform and loyalty program management solution that helps businesses build and maintain long-term relationships with customers. Through point accumulation and rewards for purchases or other actions, customers can redeem their points for gifts. The system also integrates online payment, shipping, mini-games, and connects with multiple third-party services such as POS, KiotViet, and Zalo Official Account.",
-      "achievement": "Successfully developed and deployed to over 15 customers nationwide",
+      "summary": "Customer loyalty platform to manage members, points, rewards, and omnichannel integrations.",
+      "problem": "Manual reward workflows and fragmented POS/CRM data across partners.",
+      "outcome": "Automated reward redemption and streamlined integrations, reducing manual operations for client teams.",
+      "role": "Fullstack Developer (C#/.NET, Integrations)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo and repo are available upon request.",
       "period": "2023 - Present"
     },
     "plant": {
       "title": "Plant Management Website",
-      "description": "This is a system for monitoring the growth, location, area, and status of plants. After purchasing a product, customers will contribute a tree to help green the country. They will receive a tree code and activate their planted tree through the website. On the website, users can track their tree's growth, location, and images throughout its development. Additionally, they can read news about the company, its activities, and enjoy mini-apps on the platform.",
+      "summary": "Plant management system for tracking tree growth, location, and customer contributions.",
+      "problem": "Needed a unified dashboard to monitor plant status and keep customers engaged post-purchase.",
+      "outcome": "Delivered tracking workflows and admin tools for continuous updates.",
+      "role": "Backend Developer (C#/.NET APIs)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo and repo are available upon request.",
       "period": "3/2024 - 7/2024 | 5/2025 - Present"
     },
     "sale": {
       "title": "Sale Miniapp",
-      "description": "This is a sales system that allows users to browse products, make purchases through the miniapp, pay directly via VNPay, and view purchase and payment history on the miniapp. The system includes several other features such as a shopping cart, online payment, delivery, price filtering, viewing personal information, product details, etc. The system is integrated with third parties like KiotViet, VNPay, Grab, and others.",
+      "summary": "Miniapp for browsing products, checkout, and VNPay payments inside Zalo.",
+      "problem": "Needed a lightweight in-app checkout and order history for users.",
+      "outcome": "Implemented payment flow and order history to speed up purchases.",
+      "role": "Frontend Developer (React)",
+      "demoUrl": "",
+      "repoUrl": "",
+      "linksNote": "Demo and repo are available upon request.",
       "period": "7/2024 - 12/2024"
-    },
-    "role": "Fullstack Developer"
+    }
   },
   "education": {
     "title": "Education & Certifications",
@@ -108,6 +134,7 @@
     "title": "Contact",
     "subtitle": "Get in Touch",
     "description": "I'm always open to hearing about new collaboration opportunities. Send me a message and I'll respond as soon as possible.",
+    "note": "Open to middle fullstack opportunities with C#/.NET, React, Node.js, Next.js, and modern web technologies.",
     "labels": {
       "email": "Email",
       "mobile": "Mobile",
@@ -119,9 +146,11 @@
       "email": "Your Email",
       "subject": "Subject",
       "message": "Your Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "sending": "Sending..."
     },
-    "success": "Thank you for contacting me! I'll respond as soon as possible."
+    "success": "Thank you for contacting me! I'll respond as soon as possible.",
+    "error": "Sorry, there was an error sending your message. Please try again or contact me directly at namnguyenhuuthanh@gmail.com"
   }
 }
 

@@ -13,7 +13,7 @@ import BackToTop from './js/shared/BackToTop'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
-  const { language } = useLanguage() // Subscribe to language changes
+  const { language } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {

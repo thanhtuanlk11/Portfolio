@@ -7,73 +7,74 @@ import {
   SiReact, 
   SiAngular, 
   SiDotnet,
-  SiNestjs,
   SiPostgresql,
   SiMysql,
   SiMongodb,
   SiDocker,
   SiGraphql,
-  SiSass,
   SiTailwindcss,
   SiPostman,
-  SiSwagger
+  SiHtml5,
+  SiCss3,
+  SiGit,
+  SiTypescript,
+  SiNextdotjs
 } from 'react-icons/si'
 import { 
-  FaCode,
-  FaDatabase,
   FaServer,
-  FaCloud
+  FaCloud,
+  FaDatabase
 } from 'react-icons/fa'
 import '../../styles/components/Skills.scss'
 
 const Skills = () => {
   const { t } = useLanguage()
+  const MotionDiv = motion.div
 
   const skillCategories = [
     {
-      title: t('skills.categories.programming'),
-      icon: '💻',
+      title: t('skills.categories.main'),
+      icon: '⭐',
       skills: [
-        { name: 'C#', icon: FaCode, color: '#239120' },
-        { name: 'NodeJS', icon: SiNodedotjs, color: '#339933' },
-        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
-        { name: 'jQuery', icon: SiJavascript, color: '#0769AD' },
-      ]
-    },
-    {
-      title: t('skills.categories.frameworks'),
-      icon: '⚛️',
-      skills: [
+        { name: 'C#/.NET Core', icon: SiDotnet, color: '#512BD4' },
         { name: 'ReactJS', icon: SiReact, color: '#61DAFB' },
-        { name: 'Angular', icon: SiAngular, color: '#DD0031' },
-        { name: '.NET Core', icon: SiDotnet, color: '#512BD4' },
-        { name: 'NestJS', icon: SiNestjs, color: '#E0234E' },
-        { name: 'Entity Framework', icon: SiDotnet, color: '#512BD4' },
+        { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
+        { name: 'Next.js', icon: SiNextdotjs, color: '#111111' },
+        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
         { name: 'RESTful API', icon: SiPostman, color: '#FF6C37' },
       ]
     },
     {
-      title: t('skills.categories.database'),
-      icon: '🗄️',
+      title: t('skills.categories.familiar'),
+      icon: '🧩',
       skills: [
+        { name: 'Angular', icon: SiAngular, color: '#DD0031' },
+        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
         { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
         { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
-        { name: 'SQL Server', icon: FaDatabase, color: '#CC2927' },
+        { name: 'SQL Server', icon: SiMysql, color: '#4479A1' },
         { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
-        { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
+        { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
+        { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
       ]
     },
     {
-      title: t('skills.categories.other'),
-      icon: '🛠️',
+      title: t('skills.categories.devops'),
+      icon: '🚀',
       skills: [
-        { name: 'SCSS', icon: SiSass, color: '#CC6699' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-        { name: 'Zalo Miniapp', icon: FaCode, color: '#0068FF' },
-        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
-        { name: 'Swagger', icon: SiSwagger, color: '#85EA2D' },
+        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
         { name: 'VPS', icon: FaServer, color: '#2496ED' },
+        { name: 'Server Management', icon: FaServer, color: '#CC2927' },
+        { name: 'Hosting', icon: FaCloud, color: '#0066CC' },
+        { name: 'Git', icon: SiGit, color: '#F05032' },
+      ]
+    },
+    {
+      title: t('skills.categories.learning'),
+      icon: '📘',
+      skills: [
+        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+        { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
       ]
     }
   ]
@@ -114,7 +115,7 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <SectionTitle>{t('skills.title')}</SectionTitle>
-        <motion.div 
+        <MotionDiv 
           className="skills-content"
           variants={containerVariants}
           initial="hidden"
@@ -122,7 +123,7 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {skillCategories.map((category, index) => (
-            <motion.div
+            <MotionDiv
               key={index}
               variants={itemVariants}
               className="skill-category-wrapper"
@@ -136,7 +137,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => {
                     const IconComponent = skill.icon
                     return (
-                      <motion.div
+                      <MotionDiv
                         key={skillIndex}
                         variants={skillCardVariants}
                         initial="rest"
@@ -148,14 +149,14 @@ const Skills = () => {
                         </div>
                         <span className="skill-name">{skill.name}</span>
                         <div className="skill-glow" style={{ '--skill-color': skill.color }}></div>
-                      </motion.div>
+                      </MotionDiv>
                     )
                   })}
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           ))}
-        </motion.div>
+        </MotionDiv>
       </div>
     </section>
   )
