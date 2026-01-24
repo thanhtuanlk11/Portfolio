@@ -18,12 +18,14 @@ import {
   SiCss3,
   SiGit,
   SiTypescript,
-  SiNextdotjs
+  SiNextdotjs,
+  SiGooglecloud
 } from 'react-icons/si'
 import { 
   FaServer,
   FaCloud,
-  FaDatabase
+  FaDatabase,
+  FaBrain
 } from 'react-icons/fa'
 import '../../styles/components/Skills.scss'
 
@@ -50,6 +52,8 @@ const Skills = () => {
       skills: [
         { name: 'Angular', icon: SiAngular, color: '#DD0031' },
         { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+        { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
         { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
         { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
         { name: 'SQL Server', icon: SiMysql, color: '#4479A1' },
@@ -73,8 +77,8 @@ const Skills = () => {
       title: t('skills.categories.learning'),
       icon: '📘',
       skills: [
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-        { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
+        { name: 'AI', icon: FaBrain, color: '#FF6B6B' },
+        { name: 'Cloud', icon: SiGooglecloud, color: '#4285F4' },
       ]
     }
   ]

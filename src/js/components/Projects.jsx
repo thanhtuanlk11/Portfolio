@@ -15,6 +15,8 @@ const Projects = () => {
       role: t('projects.pandaloyalty.role'),
       summary: t('projects.pandaloyalty.summary'),
       problem: t('projects.pandaloyalty.problem'),
+      challenge: t('projects.pandaloyalty.challenge'),
+      solution: t('projects.pandaloyalty.solution'),
       outcome: t('projects.pandaloyalty.outcome'),
       demoUrl: t('projects.pandaloyalty.demoUrl'),
       repoUrl: t('projects.pandaloyalty.repoUrl'),
@@ -29,6 +31,8 @@ const Projects = () => {
       role: t('projects.plant.role'),
       summary: t('projects.plant.summary'),
       problem: t('projects.plant.problem'),
+      challenge: t('projects.plant.challenge'),
+      solution: t('projects.plant.solution'),
       outcome: t('projects.plant.outcome'),
       demoUrl: t('projects.plant.demoUrl'),
       repoUrl: t('projects.plant.repoUrl'),
@@ -43,6 +47,8 @@ const Projects = () => {
       role: t('projects.sale.role'),
       summary: t('projects.sale.summary'),
       problem: t('projects.sale.problem'),
+      challenge: t('projects.sale.challenge'),
+      solution: t('projects.sale.solution'),
       outcome: t('projects.sale.outcome'),
       demoUrl: t('projects.sale.demoUrl'),
       repoUrl: t('projects.sale.repoUrl'),
@@ -71,6 +77,16 @@ const Projects = () => {
                 {project.problem && (
                   <div className="project-problem">
                     <strong>{t('projects.labels.problem')}:</strong> {project.problem}
+                  </div>
+                )}
+                {project.challenge && (
+                  <div className="project-challenge">
+                    <strong>{t('projects.labels.challenge')}:</strong> {project.challenge}
+                  </div>
+                )}
+                {project.solution && (
+                  <div className="project-solution">
+                    <strong>{t('projects.labels.solution')}:</strong> {project.solution}
                   </div>
                 )}
                 {project.outcome && (

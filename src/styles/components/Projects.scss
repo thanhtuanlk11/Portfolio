@@ -79,10 +79,47 @@
   line-height: 1.6;
 }
 
-.project-problem,
-.project-outcome {
+.project-problem {
   padding: 0.75rem;
   background: $bg-secondary;
+  border-left: 3px solid $primary-color;
+  margin-bottom: $spacing-md;
+  border-radius: $radius-sm;
+  font-size: 0.9rem;
+  color: $text-primary;
+}
+
+.project-challenge {
+  padding: 0.75rem;
+  background: #fff3cd;
+  border-left: 3px solid #ffc107;
+  margin-bottom: $spacing-md;
+  border-radius: $radius-sm;
+  font-size: 0.9rem;
+  color: #856404;
+  
+  strong {
+    color: #856404;
+  }
+}
+
+.project-solution {
+  padding: 0.75rem;
+  background: #d1ecf1;
+  border-left: 3px solid #0dcaf0;
+  margin-bottom: $spacing-md;
+  border-radius: $radius-sm;
+  font-size: 0.9rem;
+  color: #0c5460;
+  
+  strong {
+    color: #0c5460;
+  }
+}
+
+.project-outcome {
+  padding: 0.75rem;
+  background: $bg-green-light;
   border-left: 3px solid $primary-color;
   margin-bottom: $spacing-md;
   border-radius: $radius-sm;

@@ -1,10 +1,29 @@
 import { useLanguage } from '../shared/useLanguage'
 import Button from '../shared/Button'
+import { motion } from 'framer-motion'
 import '../../styles/components/Hero.scss'
 
 const Hero = () => {
   const { t } = useLanguage()
   const cvUrl = `${import.meta.env.BASE_URL}namnguyenhuuthanh.pdf`
+  const MotionDiv = motion.div
+  const MotionH1 = motion.h1
+  const MotionP = motion.p
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.12 }
+    }
+  }
+  const itemVariants = {
+    hidden: { opacity: 0, y: 18 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  }
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
+  }
 
   const handleDownloadCV = async (e) => {
     e.preventDefault()
@@ -48,24 +67,28 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-container">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1 className="hero-title">
+        <MotionDiv className="hero-content" variants={containerVariants} initial="hidden" animate="visible">
+          <MotionDiv className="hero-text" variants={itemVariants}>
+            <MotionH1 className="hero-title" variants={itemVariants}>
               {t('hero.greeting')} <span className="highlight">{t('hero.name')}</span>
-            </h1>
-            <p className="hero-subtitle">{t('hero.title')}</p>
-            <p className="hero-description">
+            </MotionH1>
+            <MotionP className="hero-subtitle" variants={itemVariants}>{t('hero.title')}</MotionP>
+            <MotionP className="hero-description" variants={itemVariants}>
               {t('hero.description')}
-            </p>
-            <div className="hero-buttons">
-              <Button href="#projects" variant="primary">
-                {t('hero.projectsBtn')}
-              </Button>
-              <Button href={cvUrl} variant="secondary" onClick={handleDownloadCV} download="namnguyenhuuthanh.pdf">
-                {t('hero.downloadCv')}
-              </Button>
-            </div>
-            <div className="hero-social">
+            </MotionP>
+            <MotionDiv className="hero-buttons" variants={itemVariants}>
+              <MotionDiv whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                <Button href="#projects" variant="primary">
+                  {t('hero.projectsBtn')}
+                </Button>
+              </MotionDiv>
+              <MotionDiv whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+                <Button href={cvUrl} variant="secondary" onClick={handleDownloadCV} download="namnguyenhuuthanh.pdf">
+                  {t('hero.downloadCv')}
+                </Button>
+              </MotionDiv>
+            </MotionDiv>
+            <MotionDiv className="hero-social" variants={itemVariants}>
               <a 
                 href="https://www.linkedin.com/in/nam-nguyen-051a17207/" 
                 target="_blank" 
@@ -86,18 +109,18 @@ const Hero = () => {
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
               </a>
-            </div>
-          </div>
-          <div className="hero-image">
-            <div className="hero-avatar">
+            </MotionDiv>
+          </MotionDiv>
+          <MotionDiv className="hero-image" variants={imageVariants}>
+            <MotionDiv className="hero-avatar" whileHover={{ scale: 1.02 }}>
               <img 
                 src={`${import.meta.env.BASE_URL}image/thanhnam.jpg`}
                 alt="Nguyen Huu Thanh Nam" 
                 className="avatar-image"
               />
-            </div>
-          </div>
-        </div>
+            </MotionDiv>
+          </MotionDiv>
+        </MotionDiv>
       </div>
       <div className="scroll-indicator">
         <span></span>
